@@ -1,0 +1,21 @@
+# create a default package.json
+- npm init -y 
+
+# install tailwind css
+- npm install tailwindcss
+
+# create style.css on src folder and add this
+- @tailwind base;
+- @tailwind components;
+- @tailwind utilities;
+
+# make a default script for tailwindcss see on package.json
+-  "scripts": {
+        "<nameyoulike>": "tailwindcss build src/style.css -o public/style.css"
+    },
+
+# getting default tailwindcss, tailwind.config.js will appear
+- npx tailwindcss init --full
+
+# adding custom tailwind config file clean tailwind.config.js will appear
+- npx tailwindcss init
